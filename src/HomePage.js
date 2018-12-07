@@ -63,11 +63,9 @@ class HomePage extends Component {
             console.log(e);
         });
         }
-        
-
     }
     
-    render() {
+    render(){
         return (
             <div className="content-area">
                 {this.state.content}
