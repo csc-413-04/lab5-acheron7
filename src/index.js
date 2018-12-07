@@ -7,6 +7,8 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import { importMessage} from './redux/actions';
 
+const websocket = new WebSocket('ws:localhost/1234/ws');
+
 websocket.onopen = ()=>{
     console.log('ws has connected');
 }
